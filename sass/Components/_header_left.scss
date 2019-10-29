@@ -1,0 +1,17 @@
+header{
+    .header__left{
+        ul{
+            display: flex;
+            list-style-type: none;
+            li{
+                margin: 0px 10px;
+                padding-top:15px;
+                a{
+                    text-decoration: none;
+                    font-size: $font_size_header_left;
+                    color: $color_header;
+                }
+            }
+        }
+    }
+}

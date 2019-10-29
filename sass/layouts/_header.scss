@@ -1,0 +1,51 @@
+@import '../Components/logo';
+@import '../Components/header_left';
+@import '../Components/header_right';
+@import '../Components/header_btn';
+header{
+    margin: 20px 30px;
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .rps_768{
+        display: none;
+        width: 100%;
+        i{
+            font-size: 35px;
+            color: $color_header;
+            &:hover{
+                cursor: pointer;
+            }  
+        } 
+        img{
+            width: 96px;
+            height: 60px;
+        }
+        @include Responsive($SM){
+            display: flex;
+            justify-content: space-between;
+        } 
+    }
+    .header__right{
+        ul{
+            li{
+                span{
+                    @include Responsive($XL){
+                        display: none;
+                    }
+                }
+            }
+        }
+        @include Responsive($SM){
+            display: none;
+        }
+    }
+    .header__left{
+        @include Responsive($SM){
+            display: none;
+        }
+    }
+
+}
+

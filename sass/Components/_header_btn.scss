@@ -1,0 +1,32 @@
+.hover__line{
+    .line{
+        width: 30px;
+        height: 2px;
+        background-color: $color_header;
+        position: relative;
+        margin-top:20px;
+        &::before{
+            content: '';
+            position: absolute;
+            top:-10px;
+            left: 0px;
+            width: 30px;
+            width: 30px;
+            height: 2px;
+            background-color: $color_header;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top:10px;
+            left: 0px;
+            width: 30px;
+            width: 30px;
+            height: 2px;
+            background-color: $color_header;
+        }
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}

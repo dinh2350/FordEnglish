@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body, head {
+  font-size: 10px; }
+
+.logo {
+  padding-top: 3px !important; }
+  .logo img {
+    width: 96px;
+    height: 60px; }
+
+header .header__left ul {
+  display: flex;
+  list-style-type: none; }
+  header .header__left ul li {
+    margin: 0px 10px;
+    padding-top: 15px; }
+    header .header__left ul li a {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: #0276b3; }
+
+.header__right ul {
+  list-style-type: none;
+  display: flex; }
+  .header__right ul li {
+    cursor: pointer;
+    margin: 0px 15px;
+    padding-top: 15px; }
+    .header__right ul li i {
+      font-size: 25px;
+      color: #0276b3;
+      margin-right: 10px; }
+    .header__right ul li span {
+      font-size: 1.2rem;
+      color: #0276b3; }
+
+.hover__line .line {
+  width: 30px;
+  height: 2px;
+  background-color: #0276b3;
+  position: relative;
+  margin-top: 20px; }
+  .hover__line .line::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    width: 30px;
+    width: 30px;
+    height: 2px;
+    background-color: #0276b3; }
+  .hover__line .line::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 30px;
+    width: 30px;
+    height: 2px;
+    background-color: #0276b3; }
+.hover__line:hover {
+  cursor: pointer; }
+
+header {
+  margin: 20px 30px; }
+  header nav {
+    display: flex;
+    justify-content: space-between; }
+  header .rps_768 {
+    display: none;
+    width: 100%; }
+    header .rps_768 i {
+      font-size: 35px;
+      color: #0276b3; }
+      header .rps_768 i:hover {
+        cursor: pointer; }
+    header .rps_768 img {
+      width: 96px;
+      height: 60px; }
+    @media screen and (max-width: 768px) {
+      header .rps_768 {
+        display: flex;
+        justify-content: space-between; } }
+  @media screen and (max-width: 1200px) {
+    header .header__right ul li span {
+      display: none; } }
+  @media screen and (max-width: 768px) {
+    header .header__right {
+      display: none; } }
+  @media screen and (max-width: 768px) {
+    header .header__left {
+      display: none; } }
+
+/*# sourceMappingURL=main.css.map */
