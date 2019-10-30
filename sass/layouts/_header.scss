@@ -51,7 +51,7 @@ header{
         display: none;
         width: 100%;
         @include Responsive($SM){
-            display: block;
+            // display: block;
         }
         ul{
             list-style-type: none ;
