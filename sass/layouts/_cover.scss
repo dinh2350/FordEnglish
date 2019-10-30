@@ -1,13 +1,18 @@
 .cover{
-    background-image: url('../img/cover.jpeg');
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    height: 600px;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        @include Responsive($MD){
+            background-position-x: 50px;
+        }
+    }
     .cover__content{
-        padding: 45px;
+        position: absolute;
+        top:25px;
+        left: 30px;
         h2{
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: white;
             margin-bottom: 30px;
         }
@@ -38,6 +43,5 @@
             }
         }
     }
-    @include  Responsive($MD){
-    }
+
 }
