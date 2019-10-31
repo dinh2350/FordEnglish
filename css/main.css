@@ -471,14 +471,14 @@ header {
       background-color: white;
       color: #d92e14;
       cursor: pointer; }
-.recall #btn__DISCLOSURES {
+.recall #btn__disclosures {
   text-align: center;
   font-size: 1.1rem;
   color: #0276b3;
   width: 20%;
-  margin: 10px auto;
+  margin: 25px auto;
   position: relative; }
-  .recall #btn__DISCLOSURES::after {
+  .recall #btn__disclosures::after {
     content: '';
     position: absolute;
     top: -3px;
@@ -488,5 +488,17 @@ header {
     border-bottom: 1px solid #0276b3;
     border-right: 1px solid #0276b3;
     transform: rotate(45deg); }
+  .recall #btn__disclosures:hover {
+    cursor: pointer; }
+.recall #disclosures__content {
+  display: none;
+  width: 100%;
+  height: 400px;
+  overflow: scroll;
+  background: rgba(0, 0, 0, 0.05); }
+  .recall #disclosures__content p {
+    width: 90%;
+    margin: 15px auto;
+    font-size: 1rem; }
 
 /*# sourceMappingURL=main.css.map */
