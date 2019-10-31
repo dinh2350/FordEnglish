@@ -3,7 +3,10 @@
 @import '../Components/header_right';
 @import '../Components/header_btn';
 header{
-    margin: 20px 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background: white;
     nav{
         display: flex;
         justify-content: space-between;
@@ -50,9 +53,6 @@ header{
     .mobie__menu{
         display: none;
         width: 100%;
-        @include Responsive($SM){
-            // display: block;
-        }
         ul{
             list-style-type: none ;
             li{
