@@ -448,4 +448,45 @@ header {
       .happen .happen__show_hide_btn {
         display: block; } }
 
+.recall .recall__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.05); }
+  .recall .recall__content div h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #d92e14; }
+  .recall .recall__content div button {
+    display: block;
+    margin: 40px auto;
+    border: none;
+    background: #d92e14;
+    width: 280px;
+    height: 50px;
+    color: white;
+    font-size: 1.3rem; }
+    .recall .recall__content div button:hover {
+      border: 1px solid #d92e14;
+      background-color: white;
+      color: #d92e14;
+      cursor: pointer; }
+.recall #btn__DISCLOSURES {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #0276b3;
+  width: 20%;
+  margin: 10px auto;
+  position: relative; }
+  .recall #btn__DISCLOSURES::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: 10%;
+    width: 15px;
+    height: 15px;
+    border-bottom: 1px solid #0276b3;
+    border-right: 1px solid #0276b3;
+    transform: rotate(45deg); }
+
 /*# sourceMappingURL=main.css.map */
